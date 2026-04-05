@@ -6,6 +6,7 @@ import { IconList } from "../../organisms/IconList";
 import { IconBtn } from "../../atoms/IconBtn";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub, faSquareLinkedin } from "@fortawesome/free-brands-svg-icons";
+import { pageInfo } from "../../assets/const";
 import data from "../../assets/akilasatolu.json";
 
 export const Home = () => {
@@ -16,16 +17,16 @@ export const Home = () => {
     <CmnInner>
       <Avatar />
       <div className={textBlockCss}>
-        <p className={textCss}>{data.home["1-1"]}<Link to={data.home["1-2-1"]} className={textLinkCss} onClick={ScrollToTop}>{data.home["1-2"]}</Link>{data.home["1-3"]}</p>
+        <p className={textCss}>{data.home["1-1"]}<Link to={pageInfo[data.home["1-2-1"]]?.path ?? pageInfo.home.path} className={textLinkCss} onClick={ScrollToTop}>{data.home["1-2"]}</Link>{data.home["1-3"]}</p>
       </div>
       <div className={textBlockCss}>
-        <p className={textCss}>{data.home["2-1"]}<Link to={data.home["2-2-1"]} className={textLinkCss} onClick={ScrollToTop}>{data.home["2-2"]}</Link>{data.home["2-3"]}</p>
+        <p className={textCss}>{data.home["2-1"]}<Link to={pageInfo[data.home["2-2-1"]]?.path ?? pageInfo.home.path} className={textLinkCss} onClick={ScrollToTop}>{data.home["2-2"]}</Link>{data.home["2-3"]}</p>
       </div>
       <div className={textBlockCss}>
         <p className={textCss}>{data.home["3-1"]}</p>
       </div>
       <div className={textBlockCss}>
-        <p className={textCss}>{data.home["4-1"]}<Link to={data.home["4-2-1"]} className={textLinkCss} onClick={ScrollToTop}>{data.home["4-2"]}</Link>{data.home["4-3"]}<Link to={data.home["4-4-1"]} className={textLinkCss} onClick={ScrollToTop}>{data.home["4-4"]}</Link>{data.home["4-5"]}</p>
+        <p className={textCss}>{data.home["4-1"]}<Link to={pageInfo[data.home["4-2-1"]]?.path ?? pageInfo.home.path} className={textLinkCss} onClick={ScrollToTop}>{data.home["4-2"]}</Link>{data.home["4-3"]}<Link to={pageInfo[data.home["4-4-1"]]?.path ?? pageInfo.home.path} className={textLinkCss} onClick={ScrollToTop}>{data.home["4-4"]}</Link>{data.home["4-5"]}</p>
       </div>
       <div className={textBlockCss}>
         <p className={`${textCss} flex flex-row items-center text-[var(--color-secondary-light)]`}>{data.home["5-1"]}
