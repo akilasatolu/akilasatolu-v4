@@ -1,13 +1,13 @@
 import { CmnHeaderInner } from "../../templates/CmnHeaderInner";
-import { CmnHeaderList } from "../../organisms/CmnHeaderList";
+import { IconList } from "../../organisms/IconList";
 import { HomeLink } from "../../molecules/HomeLink";
 
 export const CmnHeader = () =>{
   return (
     <CmnHeaderInner>
-      <CmnHeaderList>
+      <IconList>
         <HomeLink />
-      </CmnHeaderList>
+      </IconList>
     </CmnHeaderInner>
   );
 };
