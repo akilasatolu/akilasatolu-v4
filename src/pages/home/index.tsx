@@ -16,7 +16,7 @@ export const Home = () => {
   const data: HomeData | undefined = useAtomValue(allDataAtom)?.home;
   const textBlockCss = "mt-4";
   const textCss = "text-lg leading-relaxed";
-  const textLinkCss = "inline-block text-[1.4em] font-semibold tracking-[0.03em]";
+  const textLinkCss = "inline-block text-[1.4em] font-semibold tracking-[0.03em] ml-1 mr-1";
   return (
     <>
       {
