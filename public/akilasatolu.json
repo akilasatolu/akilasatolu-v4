@@ -1,0 +1,74 @@
+{
+    "en": {
+        "home": {
+            "1-1": "Hi 👋, I'm ",
+            "1-2": "akilasatolu",
+            "1-2-1":"home",
+            "1-3": ".",
+            "2-1": "I'm a software engineer with ",
+            "2-2":"experience",
+            "2-2-1":"experience",
+            "2-3":" in full-stack web development using React, TypeScript, Python, and AWS.",
+            "3-1":"I enjoy learning new things while valuing consistent effort.",
+            "4-1":"You can follow my daily ",
+            "4-2":"goals",
+            "4-2-1":"goals",
+            "4-3":" as I work toward a more fulfilling future, and explore my ",
+            "4-4":"photography",
+            "4-4-1":"photos",
+            "4-5":", where I capture moments from everyday life.",
+            "5-1": "Feel free to check out 👉"
+        },
+        "experience": {},
+        "goals": {},
+        "photos": {}
+    },
+    "ja": {
+        "home": {
+            "1-1": "こんにちは👋、私は",
+            "1-2": "akilasatolu",
+            "1-2-1":"home",
+            "1-3": "です。",
+            "2-1": "React、TypeScript、Python、AWSを使用したフルスタックWeb開発の",
+            "2-2":"経験",
+            "2-2-1":"experience",
+            "2-3":"を持つソフトウェアエンジニアです。",
+            "3-1":"一貫した努力を大切にしながら、新しいことを学ぶのが好きです。",
+            "4-1":"より充実した未来に向けて取り組む私の日々の",
+            "4-2":"目標",
+            "4-2-1":"goals",
+            "4-3":"や、日常の瞬間を捉える",
+            "4-4":"写真",
+            "4-4-1":"photos",
+            "4-5":"もぜひご覧ください。",
+            "5-1": "👉こちらもぜひチェックしてください"
+        },
+        "experience": {},
+        "goals": {},
+        "photos": {}
+    },
+    "kr": {
+        "home": {
+            "1-1": "안녕하세요👋, 저는",
+            "1-2": "akilasatolu",
+            "1-2-1":"home",
+            "1-3": "입니다.",
+            "2-1": "React, TypeScript, Python, AWS를 사용한 풀스택 웹 개발의",
+            "2-2":"경험",
+            "2-2-1":"experience",
+            "2-3":"을 가진 소프트웨어 엔지니어입니다.",
+            "3-1":"일관된 노력을 소중히 여기며 새로운 것을 배우는 것을 좋아합니다.",
+            "4-1":"보다 만족스러운 미래를 위해 노력하는 저의 일상적인",
+            "4-2":"목표",
+            "4-2-1":"goals",
+            "4-3":"와 일상의 순간을 포착하는",
+            "4-4":"사진",
+            "4-4-1":"photos",
+            "4-5":"도 꼭 확인해 보세요.",
+            "5-1": "👉こちらもぜひチェックしてください"
+        },
+        "experience": {},
+        "goals": {},
+        "photos": {}
+    }
+}
