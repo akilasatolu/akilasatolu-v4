@@ -1,0 +1,86 @@
+@import "tailwindcss";
+
+:root{
+  font-family: var(--font-theme-primary);
+  font-size: 16px;
+  line-height: 1.5;
+  color: var(--color-primary-light);
+  background-color: var(--bg-color-light);
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  min-width: 360px;
+  min-height: 100dvh;
+}
+
+a, button {
+  cursor: pointer;
+  border: none;
+  transition: all 0.2s ease;
+  color: var(--color-accent-blue);
+}
+
+@media (hover: hover) {
+  a:hover, button:hover {
+    transform: translateY(-3px);
+  }
+
+  a:active, button:active {
+    transform: translateY(0);
+  }
+}
+
+@media (hover: none) {
+  a:active, button:active {
+    transform: translateY(2px) scale(0.98);
+  }
+}
+
+#root {
+  width: 100%;
+}
+
+.neu {
+  box-shadow: 8px 8px 16px #a3b1c6, -8px -8px 16px #ffffff;
+  /* box-shadow: 14px 14px 28px #0f1013, -14px -14px 28px #2c2e35; */
+}
+
+a.neu, button.neu {
+  box-shadow: 6px 6px 12px #a3b1c6, -6px -6px 12px #ffffff;
+  /* box-shadow: 8px 8px 16px #0f1013, -8px -8px 16px #2c2e35; */
+}
+
+@media (hover: hover) {
+  a.neu:hover, button.neu:hover {
+    box-shadow: 10px 10px 20px #a3b1c6, -10px -10px 20px #ffffff;
+    /* box-shadow: 16px 16px 32px #0f1013, -16px -16px 32px #2c2e35; */
+  }
+
+  a.neu:active, button.neu:active {
+    box-shadow: inset 4px 4px 8px #a3b1c6, inset -4px -4px 8px #ffffff;
+    /* box-shadow: inset 6px 6px 12px #0f1013, inset -6px -6px 12px #2c2e35; */
+  }
+}
+
+@media (hover: none) {
+  a.neu:active, button.neu:active {
+    box-shadow: inset 4px 4px 8px #a3b1c6, inset -4px -4px 8px #ffffff;
+    /* box-shadow: inset 6px 6px 12px #0f1013, inset -6px -6px 12px #2c2e35; */
+  }
+}
+
+.icon__btn {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
