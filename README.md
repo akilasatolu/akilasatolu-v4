@@ -7,7 +7,6 @@ react-router-dom
 
 
 
-・icon__btnコンポネ作成
 ・スマホの時のクリックアクション調整
 ・microCMS使用
 ・s3でテキストjson管理

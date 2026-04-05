@@ -1,4 +1,10 @@
-export const pageInfo = {
+type PageInfo = {
+    [key: string]: {
+        path: string;
+    };
+};
+
+export const pageInfo: PageInfo = {
     home:{
         path: "/"
     },

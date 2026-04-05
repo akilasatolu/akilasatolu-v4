@@ -74,13 +74,3 @@ a.neu, button.neu {
     /* box-shadow: inset 6px 6px 12px #0f1013, inset -6px -6px 12px #2c2e35; */
   }
 }
-
-.icon__btn {
-  width: 48px;
-  height: 48px;
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
