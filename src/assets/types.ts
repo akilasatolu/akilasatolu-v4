@@ -6,6 +6,7 @@ export type AllLangAllData = {
 
 export type AllData = {
   home?: HomeData;
+  photos?: PhotosData;
 };
 
 export type HomeData = {
@@ -26,4 +27,10 @@ export type HomeData = {
   "4-4-1": string;
   "4-5": string;
   "5-1": string;
+};
+
+export type PhotosData = PhotoData[];
+export type PhotoData = {
+  photo: string;
+  text: string;
 };

@@ -21,7 +21,61 @@
         },
         "experience": {},
         "goals": {},
-        "photos": {}
+        "photos": [
+            { "photo": "img-001.webp", "text": "2023-07-13 In Japan 🇯🇵" },
+            { "photo": "img-002.webp", "text": "2023-07-13 In Japan 🇯🇵" },
+            { "photo": "img-003.webp", "text": "2023-07-13 In Japan 🇯🇵" },
+            { "photo": "img-004.webp", "text": "2023-07-13 In Japan 🇯🇵" },
+            { "photo": "img-005.webp", "text": "2023-07-13 In Japan 🇯🇵" },
+
+            { "photo": "img-006.webp", "text": "2023-07-13 In Japan 🇯🇵" },
+            { "photo": "img-007.webp", "text": "2023-07-13 In Japan 🇯🇵" },
+            { "photo": "img-008.webp", "text": "2023-07-13 In Japan 🇯🇵" },
+            { "photo": "img-009.webp", "text": "2023-07-13 In Japan 🇯🇵" },
+            { "photo": "img-010.webp", "text": "2023-07-13 In Japan 🇯🇵" },
+
+            { "photo": "img-011.webp", "text": "2023-07-13 In Japan 🇯🇵" },
+            { "photo": "img-012.webp", "text": "2023-07-13 In Japan 🇯🇵" },
+            { "photo": "img-013.webp", "text": "2023-07-13 In Japan 🇯🇵" },
+            { "photo": "img-014.webp", "text": "2023-07-13 In Japan 🇯🇵" },
+            { "photo": "img-015.webp", "text": "2023-07-13 In Japan 🇯🇵" },
+
+            { "photo": "img-016.webp", "text": "2023-08-25 In Japan 🇯🇵" },
+            { "photo": "img-017.webp", "text": "2023-09-17 In Japan 🇯🇵" },
+            { "photo": "img-018.webp", "text": "2023-11-08 In Australia 🇦🇺" },
+            { "photo": "img-019.webp", "text": "2023-12-08 In Australia 🇦🇺" },
+            { "photo": "img-020.webp", "text": "2023-12-09 In Australia 🇦🇺" },
+
+            { "photo": "img-021.webp", "text": "2023-12-10 In Australia 🇦🇺" },
+            { "photo": "img-022.webp", "text": "2023-12-17 In Australia 🇦🇺" },
+            { "photo": "img-023.webp", "text": "2023-12-30 In Australia 🇦🇺" },
+            { "photo": "img-024.webp", "text": "2024-01-12 In Australia 🇦🇺" },
+            { "photo": "img-025.webp", "text": "2024-03-02 In Australia 🇦🇺" },
+
+            { "photo": "img-026.webp", "text": "2024-03-16 In Australia 🇦🇺" },
+            { "photo": "img-027.webp", "text": "2024-04-04 In Australia 🇦🇺" },
+            { "photo": "img-028.webp", "text": "2024-05-26 In Australia 🇦🇺" },
+            { "photo": "img-029.webp", "text": "2024-06-02 In Australia 🇦🇺" },
+            { "photo": "img-030.webp", "text": "2024-06-23 In Australia 🇦🇺" },
+
+            { "photo": "img-031.webp", "text": "2024-07-15 In Australia 🇦🇺" },
+            { "photo": "img-032.webp", "text": "2024-07-15 In Australia 🇦🇺" },
+            { "photo": "img-033.webp", "text": "2025-03-10 In Japan 🇯🇵" },
+            { "photo": "img-034.webp", "text": "2025-03-14 In Japan 🇯🇵" },
+            { "photo": "img-035.webp", "text": "2025-07-22 In Korea 🇰🇷" },
+
+            { "photo": "img-036.webp", "text": "2025-07-30 In Korea 🇰🇷" },
+            { "photo": "img-037.webp", "text": "2025-07-30 In Korea 🇰🇷" },
+            { "photo": "img-038.webp", "text": "2025-07-30 In Korea 🇰🇷" },
+            { "photo": "img-039.webp", "text": "2025-07-30 In Korea 🇰🇷" },
+            { "photo": "img-040.webp", "text": "2025-07-30 In Korea 🇰🇷" },
+
+            { "photo": "img-041.webp", "text": "2025-10-26 In Korea 🇰🇷" },
+            { "photo": "img-042.webp", "text": "2025-11-02 In Japan 🇯🇵" },
+            { "photo": "img-043.webp", "text": "2026-03-23 In Japan 🇯🇵" },
+            { "photo": "img-044.webp", "text": "2026-03-23 In Japan 🇯🇵" },
+            { "photo": "img-045.webp", "text": "2026-03-29 In Japan 🇯🇵" }
+        ]
     },
     "ja": {
         "home": {
@@ -41,7 +95,7 @@
             "4-4":"写真",
             "4-4-1":"photos",
             "4-5":"もぜひご覧ください。",
-            "5-1": "👉こちらもぜひチェックしてください"
+            "5-1": "こちらもぜひチェックしてください👉"
         },
         "experience": {},
         "goals": {},
@@ -65,7 +119,7 @@
             "4-4":"사진",
             "4-4-1":"photos",
             "4-5":"도 꼭 확인해 보세요.",
-            "5-1": "👉こちらもぜひチェックしてください"
+            "5-1": "こちらもぜひチェックしてください👉"
         },
         "experience": {},
         "goals": {},

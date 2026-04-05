@@ -12,7 +12,6 @@ import { allDataAtom } from '../../assets/jotai';
 import type { HomeData } from '../../assets/types';
 
 export const Home = () => {
-  console.log(allDataAtom)
   const data: HomeData | undefined = useAtomValue(allDataAtom)?.home;
   const textBlockCss = "mt-4";
   const textCss = "text-lg leading-relaxed";

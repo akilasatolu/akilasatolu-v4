@@ -9,7 +9,7 @@ export const SetAllData = () => {
   const dataRef = useRef<AllLangAllData>({});
   const fetchData = async () => {
     try {
-      const res = await fetch('./akilasatolu.json');
+      const res = await fetch('/akilasatolu.json');
       if (!res.ok) throw new Error(`HTTP error: ${res.status}`);
 
       const data: AllLangAllData = await res.json();
