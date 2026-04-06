@@ -13,7 +13,7 @@ export const InstaxCard = (props: InstaxCardProps) => {
   return (
     <div 
         className={`bg-white p-2 pb-4 shadow-md rounded-sm w-full h-full flex flex-col transition`}
-        style={{ transform: isHovered ? "rotate(0deg) scale(1.05)" : `rotate(${rotation}deg) scale(1)` }}
+        style={{ transform: isHovered ? "rotate(0deg) scale(1.1)" : `rotate(${rotation}deg) scale(1)` }}
         onMouseEnter={() => setIsHovered(true)}
         onMouseLeave={() => setIsHovered(false)}
     >
