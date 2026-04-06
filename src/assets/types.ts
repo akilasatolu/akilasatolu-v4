@@ -7,6 +7,7 @@ export type AllLangAllData = {
 export type AllData = {
   home?: HomeData;
   photos?: PhotosData;
+  goals?: GoalsData;
 };
 
 export type HomeData = {
@@ -34,3 +35,11 @@ export type PhotoData = {
   photo: string;
   text: string;
 };
+
+export type GoalsData = {
+  year: string;
+  goals: {
+    isDone: boolean;
+    goal: string;
+  }[];
+}[];
