@@ -15,7 +15,7 @@ export const Goals = () => {
             <Accordion key={i} title={year} isOpen={i === 0} styles={`${i === 0 ? "" : "mt-6"}`}>
               <ul>
                 {goals.map(({ isDone, goal }, n) => (
-                  <li key={`${i}-${n}`} className={isDone ? "done" : ""}>
+                  <li key={`${i}-${n}`} className={`${n === 0 ? "" : "border-t"} py-3 border-gray-300`}>
                     {goal}
                   </li>
                 ))}
