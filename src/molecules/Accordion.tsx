@@ -16,7 +16,7 @@ export const Accordion = (props: AccordionProps) => {
         className="w-full p-4 flex justify-between items-center rounded-2xl neu"
         onClick={() => setIsOpen(!isOpen)}
       >
-        <span className="text-lg font-bold min-w-0 break-words">{props.title}</span>
+        <span className="text-xl font-bold min-w-0 break-words">{props.title}</span>
         <span
           className={`block w-3 h-3 border-r-2 border-b-2 
           [border-color:var(--color-accent-blue)]
