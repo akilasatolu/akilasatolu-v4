@@ -51,6 +51,11 @@ a, button {
   /* box-shadow: 14px 14px 28px #0f1013, -14px -14px 28px #2c2e35; */
 }
 
+.inu {
+  box-shadow: inset 4px 4px 8px #a3b1c6, inset -4px -4px 8px #ffffff;
+  /* box-shadow: inset 6px 6px 12px #0f1013, inset -6px -6px 12px #2c2e35; */
+}
+
 a.neu, button.neu {
   box-shadow: 6px 6px 12px #a3b1c6, -6px -6px 12px #ffffff;
   /* box-shadow: 8px 8px 16px #0f1013, -8px -8px 16px #2c2e35; */

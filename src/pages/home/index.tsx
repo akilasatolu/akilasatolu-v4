@@ -35,7 +35,7 @@ export const Home = () => {
               <p className={textCss}>{data["4-1"]}<Link to={pageInfo[data["4-2-1"]]?.path ?? pageInfo.home.path} className={textLinkCss} onClick={ScrollToTop}>{data["4-2"]}</Link>{data["4-3"]}<Link to={pageInfo[data["4-4-1"]]?.path ?? pageInfo.home.path} className={textLinkCss} onClick={ScrollToTop}>{data["4-4"]}</Link>{data["4-5"]}</p>
             </div>
             <div className={textBlockCss}>
-              <p className={`${textCss} flex flex-row items-center text-[var(--color-secondary-light)]`}>{data["5-1"]}
+              <div className={`${textCss} flex flex-row items-center text-[var(--color-secondary-light)]`}>{data["5-1"]}
                 <IconList style="ml-4">
                   <IconBtn type="a" href="https://github.com/akilasatolu">
                     <FontAwesomeIcon icon={faGithub} style={{ fontSize: 24 }} />
@@ -44,7 +44,7 @@ export const Home = () => {
                     <FontAwesomeIcon icon={faSquareLinkedin} style={{ fontSize: 24 }} />
                   </IconBtn>
                 </IconList>
-              </p>
+              </div>
             </div>
           </CmnInner>
       }
