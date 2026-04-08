@@ -12,8 +12,8 @@ export const InstaxCard = (props: InstaxCardProps) => {
 
   return (
     <div 
-        className={`bg-white p-2 pb-4 shadow-md rounded-sm w-full h-full flex flex-col transition`}
-        style={{ transform: isHovered ? "rotate(0deg) scale(1.1)" : `rotate(${rotation}deg) scale(1)` }}
+        className={`bg-white p-2 pb-4 shadow-md rounded-sm w-full h-full flex flex-col transition-transform hover:scale-110 max-[375px]:hover:scale-105`}
+        style={{ transform: `rotate(${isHovered ? 0 : rotation}deg)` }}
         onMouseEnter={() => setIsHovered(true)}
         onMouseLeave={() => setIsHovered(false)}
     >
