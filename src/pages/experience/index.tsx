@@ -1,10 +1,11 @@
 import { CmnInner } from "../../templates/CmnInner";
 import { useAtomValue } from 'jotai';
-import { allDataAtom } from '../../assets/jotai';
+import { allDataAtom, modeColorAtom } from '../../assets/jotai';
 import type { ExperienceData } from '../../assets/types';
 
 export const Experience = () => {
   const data: ExperienceData | undefined = useAtomValue(allDataAtom)?.experience;
+  const modeColor = useAtomValue(modeColorAtom);
 
   return (
     <>
@@ -22,7 +23,7 @@ export const Experience = () => {
                 </p>
                 <div className="flex flex-wrap gap-2 mt-4">
                   {pj.pjTechList.map((t, idx) => (
-                    <span key={idx} className="rounded-lg text-[var(--color-theme)] [box-shadow:3px_3px_6px_#a3b1c6,-3px_-3px_6px_#ffffff] text-xs px-2 py-1">
+                    <span key={idx} className={`rounded-lg text-[var(--color-theme)] ${modeColor === 'light' ? '[box-shadow:3px_3px_6px_#a3b1c6,-3px_-3px_6px_#ffffff]' : '[box-shadow:3px_3px_6px_#1a1c21,-3px_-3px_6px_#2c3038]'} text-xs px-2 py-1`}>
                       {t}
                     </span>
                   ))}
@@ -34,7 +35,7 @@ export const Experience = () => {
                     {Array.from({ length: 8 }).map((_, idx) => (
                       <span key={idx}
                             style={{transform: `translateX(${Math.sin((idx / 8) * Math.PI * 2) * 6}px)`}}
-                            className={`w-1 h-1 rounded-full [box-shadow:inset_1px_1px_2px_#a3b1c6,inset_-1px_-1px_2px_#ffffff]`} />
+                            className={`w-1 h-1 rounded-full bg-[var(--color-theme)]`} />
                     ))}
                   </div>
                 </div>

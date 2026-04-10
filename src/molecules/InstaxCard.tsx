@@ -32,7 +32,7 @@ export const InstaxCard = (props: InstaxCardProps) => {
         <div className="w-full flex-1 flex">
             <img className="w-full h-full object-contain" src={`/photos/${data.photo}`} alt={`${data.photo}`} loading="lazy" />
         </div>
-        <p className="text-center text-xs mt-4 font-['Comic_Sans_MS',Verdana,Arial,sans-serif]">
+        <p className="text-center text-[var(--color-primary-light)] text-xs mt-4 font-['Comic_Sans_MS',Verdana,Arial,sans-serif]">
             {data.text}
         </p>
     </div>

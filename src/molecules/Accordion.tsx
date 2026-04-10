@@ -1,4 +1,6 @@
 import { useState } from "react";
+import { modeColorAtom } from '../assets/jotai';
+import { useAtomValue } from 'jotai';
 
 type AccordionProps = {
   title: string;
@@ -9,6 +11,7 @@ type AccordionProps = {
 
 export const Accordion = (props: AccordionProps) => {
   const [isOpen, setIsOpen] = useState(props.isOpen || false);
+  const modeColor = useAtomValue(modeColorAtom);
 
   return (
     <div className={`${props?.styles}`}>
@@ -33,10 +36,10 @@ export const Accordion = (props: AccordionProps) => {
       >
         <div className="overflow-hidden">
           <div
-            className="
+            className={`
               mt-3 p-4 rounded-2xl
-              shadow-[inset_4px_4px_8px_#a3b1c6,inset_-4px_-4px_8px_#ffffff]
-            "
+              ${modeColor === "light" ? "shadow-[inset_4px_4px_8px_#a3b1c6,inset_-4px_-4px_8px_#ffffff]" : "shadow-[inset_4px_4px_8px_#181a1f,inset_-4px_-4px_8px_#2e333c]"}
+            `}
           >
             {props.children}
           </div>
