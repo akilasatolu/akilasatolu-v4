@@ -2,12 +2,12 @@
     /* font-family theme; */
     --font-theme-primary: Inter, sans-serif;
 
-    /* light theme */
+    /* light mode */
     --color-primary-light: #4a5565;
     --color-secondary-light: #6a7282;
     --bg-color-light: #e0e5ec;
 
-    /* dark theme */
+    /* dark mode */
     --color-primary-dark: #ebe6e7;
     --color-secondary-dark: #6a7282;
     --bg-color-dark: #1e1f24;

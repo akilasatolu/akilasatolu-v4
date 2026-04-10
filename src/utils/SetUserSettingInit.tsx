@@ -1,18 +1,18 @@
 import { useSetAtom } from 'jotai';
-import { languageAtom, themeColorAtom, themeColorAccentAtom } from '../assets/jotai';
+import { languageAtom, modeColorAtom, themeColorAccentAtom } from '../assets/jotai';
 import { useEffect } from 'react';
 import { GetLS } from './UseLocalStorage';
 
 export const SetUserSettingInit = () => {
   const setLang = useSetAtom(languageAtom);
-  const setTheme = useSetAtom(themeColorAtom);
+  const setMode = useSetAtom(modeColorAtom);
   const setAccent = useSetAtom(themeColorAccentAtom);
   const lang = GetLS('lang');
-  const theme = GetLS('theme');
+  const mode = GetLS('mode');
   const accent = GetLS('accent');
   useEffect(() => {
     lang && setLang(lang);
-    theme && setTheme(theme);
+    mode && setMode(mode);
     accent && setAccent(accent);
   }, []);
   return null;
