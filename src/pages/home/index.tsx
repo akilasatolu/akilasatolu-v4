@@ -35,7 +35,7 @@ export const Home = () => {
               <p className={textCss}>{data["4-1"]}<Link to={pageInfo[data["4-2-1"]]?.path ?? pageInfo.home.path} className={textLinkCss} onClick={ScrollToTop}>{data["4-2"]}</Link>{data["4-3"]}<Link to={pageInfo[data["4-4-1"]]?.path ?? pageInfo.home.path} className={textLinkCss} onClick={ScrollToTop}>{data["4-4"]}</Link>{data["4-5"]}</p>
             </div>
             <div className={textBlockCss}>
-              <div className={`${textCss} flex flex-row flex-wrap gap-x-4 gap-y-3 items-center text-[var(--color-secondary-light)]`}>
+              <div className={`${textCss} flex flex-row flex-wrap gap-x-4 gap-y-3 items-center text-[var(--color-secondary)]`}>
                 <p>{data["5-1"]}</p>
                 <IconList>
                   <IconBtn type="a" href="https://github.com/akilasatolu">

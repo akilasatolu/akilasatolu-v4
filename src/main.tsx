@@ -4,8 +4,9 @@ import { BrowserRouter } from 'react-router-dom';
 import { SetAllData } from './utils/SetAllData.tsx';
 import { SetUserSettingInit } from './utils/SetUserSettingInit.tsx';
 import { SetLanguage } from './utils/SetLanguage.tsx';
-// import App from './App.tsx'
-import { App } from './App_.tsx'
+import { SetThemeColorAccent } from "./utils/SetThemeColorAccent";
+import { SetThemeColor } from "./utils/SetThemeColor";
+import { App } from './App.tsx'
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
@@ -13,6 +14,8 @@ createRoot(document.getElementById('root')!).render(
       <App />
       <SetUserSettingInit />
       <SetLanguage />
+      <SetThemeColor />
+      <SetThemeColorAccent />
       <SetAllData />
     </BrowserRouter>
   </StrictMode>,

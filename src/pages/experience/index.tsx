@@ -13,16 +13,16 @@ export const Experience = () => {
           {data.map((pj, index) => (
             <div key={index}>
               <div className="inu p-6 rounded-2xl">
-                <p className="text-[var(--color-secondary-light)] text-sm">{pj.pjPeriod.join(" - ")}</p>
+                <p className="text-[var(--color-secondary)] text-sm">{pj.pjPeriod.join(" - ")}</p>
                 <div className="mt-1 text-xl font-bold">
                   {pj.pjTitle}
                 </div>
-                <p className="mt-2 text-[var(--color-secondary-light)] leading-relaxed">
+                <p className="mt-2 text-[var(--color-secondary)] leading-relaxed">
                   {pj.pjDescription}
                 </p>
                 <div className="flex flex-wrap gap-2 mt-4">
                   {pj.pjTechList.map((t, idx) => (
-                    <span key={idx} className="rounded-lg text-[var(--color-accent-blue)] [box-shadow:3px_3px_6px_#a3b1c6,-3px_-3px_6px_#ffffff] text-xs px-2 py-1">
+                    <span key={idx} className="rounded-lg text-[var(--color-accent)] [box-shadow:3px_3px_6px_#a3b1c6,-3px_-3px_6px_#ffffff] text-xs px-2 py-1">
                       {t}
                     </span>
                   ))}

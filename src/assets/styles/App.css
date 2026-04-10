@@ -12,6 +12,34 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+:root[data-theme='light'] {
+  color: var(--color-primary-light);
+  background-color: var(--bg-color-light);
+  --bg-color: var(--bg-color-light);
+  --color-primary: var(--color-primary-light);
+  --color-secondary: var(--color-secondary-light);
+}
+
+:root[data-theme='dark'] {
+  color: var(--color-primary-dark);
+  background-color: var(--bg-color-dark);
+  --bg-color: var(--bg-color-dark);
+  --color-primary: var(--color-primary-dark);
+  --color-secondary: var(--color-secondary-dark);
+}
+
+:root[data-color='blue'] {
+  --color-accent: var(--color-accent-blue);
+}
+
+:root[data-color='green'] {
+  --color-accent: var(--color-accent-green);
+}
+
+:root[data-color='pink'] {
+  --color-accent: var(--color-accent-pink);
+}
+
 body {
   margin: 0;
   display: flex;
@@ -23,7 +51,7 @@ a, button {
   cursor: pointer;
   border: none;
   transition: all 0.2s ease;
-  color: var(--color-accent-blue);
+  color: var(--color-accent);
 }
 
 @media (hover: hover) {

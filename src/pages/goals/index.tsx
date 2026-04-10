@@ -21,7 +21,7 @@ export const Goals = () => {
                   >
                     <div className="flex items-center gap-2 pr-2 max-[480px]:w-full max-[480px]:justify-between">
                       <div className="w-17.5 h-2 rounded-[10px] overflow-hidden [box-shadow:inset_2px_2px_4px_#A3B1C6,inset_-2px_-2px_4px_#FFFFFF] max-[480px]:w-full">
-                        <div className="h-full rounded-[10px] transition-[width,background] duration-[600ms] ease-in-out" style={{width: `${progress}%`,background: `linear-gradient(90deg, color-mix(in srgb, var(--color-accent-blue), white 40%), var(--color-accent-blue))`}}/>
+                        <div className="h-full rounded-[10px] transition-[width,background] duration-[600ms] ease-in-out" style={{width: `${progress}%`,background: `linear-gradient(90deg, color-mix(in srgb, var(--color-accent), white 40%), var(--color-accent))`}}/>
                       </div>
                       <span className="w-7.5 text-xs">{progress}%</span>
                     </div>
