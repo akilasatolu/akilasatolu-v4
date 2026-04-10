@@ -2,7 +2,7 @@ import { useAtom } from 'jotai';
 import { themeColorAtom } from '../assets/jotai';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faSun, faMoon } from "@fortawesome/free-solid-svg-icons";
-import { IconBtn } from "../atoms/IconBtn";
+import { Btn } from "../atoms/Btn";
 import { SetLS } from "../utils/UseLocalStorage";
 
 export const ThemeColor = () => {
@@ -13,10 +13,10 @@ export const ThemeColor = () => {
     };
     return (
         <>
-            <IconBtn type="button" onClick={() => { afterClickAction(theme === 'dark' ? 'light' : 'dark') }}>
+            <Btn type="button" onClick={() => { afterClickAction(theme === 'dark' ? 'light' : 'dark') }} shape="circle">
                 {theme === 'dark' && <FontAwesomeIcon icon={faSun} />}
                 {theme === 'light' && <FontAwesomeIcon icon={faMoon} />}
-            </IconBtn>
+            </Btn>
         </>
     );
 };

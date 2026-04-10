@@ -2,8 +2,8 @@ import { CmnInner } from "../../templates/CmnInner";
 import { Avatar } from "../../molecules/Avatar";
 import { Link } from "react-router-dom";
 import { ScrollToTop } from "../../utils/ScrollToTop";
-import { IconList } from "../../organisms/IconList";
-import { IconBtn } from "../../atoms/IconBtn";
+import { BtnList } from "../../molecules/BtnList";
+import { Btn } from "../../atoms/Btn";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub, faSquareLinkedin } from "@fortawesome/free-brands-svg-icons";
 import { pageInfo } from "../../assets/const";
@@ -37,14 +37,14 @@ export const Home = () => {
             <div className={textBlockCss}>
               <div className={`${textCss} flex flex-row flex-wrap gap-x-4 gap-y-3 items-center text-[var(--color-secondary)]`}>
                 <p>{data["5-1"]}</p>
-                <IconList>
-                  <IconBtn type="a" href="https://github.com/akilasatolu">
+                <BtnList type="row">
+                  <Btn type="a" href="https://github.com/akilasatolu" shape="circle">
                     <FontAwesomeIcon icon={faGithub} style={{ fontSize: 24 }} />
-                  </IconBtn>
-                  <IconBtn type="a" href="https://www.linkedin.com/in/shogo-yoshizawa-70794a374">
+                  </Btn>
+                  <Btn type="a" href="https://www.linkedin.com/in/shogo-yoshizawa-70794a374" shape="circle">
                     <FontAwesomeIcon icon={faSquareLinkedin} style={{ fontSize: 24 }} />
-                  </IconBtn>
-                </IconList>
+                  </Btn>
+                </BtnList>
               </div>
             </div>
           </CmnInner>

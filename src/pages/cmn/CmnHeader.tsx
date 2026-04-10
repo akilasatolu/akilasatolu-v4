@@ -1,5 +1,5 @@
 import { CmnHeaderInner } from "../../templates/CmnHeaderInner";
-import { IconList } from "../../organisms/IconList";
+import { BtnList } from "../../molecules/BtnList";
 import { HomeLink } from "../../molecules/HomeLink";
 import { ThemeColor } from "../../molecules/ThemeColor";
 import { ThemeColorAccent } from "../../molecules/ThemeColorAccent";
@@ -7,11 +7,11 @@ import { ThemeColorAccent } from "../../molecules/ThemeColorAccent";
 export const CmnHeader = () =>{
   return (
     <CmnHeaderInner>
-      <IconList>
+      <BtnList type="row">
         <HomeLink />
         <ThemeColor />
         <ThemeColorAccent />
-      </IconList>
+      </BtnList>
     </CmnHeaderInner>
   );
 };
