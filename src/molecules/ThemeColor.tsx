@@ -1,6 +1,6 @@
 import { useSetAtom } from 'jotai';
 import { useState } from 'react';
-import { themeColorAccentAtom } from '../assets/jotai';
+import { themeColorAtom } from '../assets/jotai';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faPalette } from "@fortawesome/free-solid-svg-icons";
 import { Btn } from "../atoms/Btn";
@@ -8,13 +8,13 @@ import { SetLS } from "../utils/UseLocalStorage";
 import { Modal } from '../organisms/Modal';
 import { BtnList } from './BtnList';
 
-export const ThemeColorAccent = () => {
-    const setColorAccent = useSetAtom(themeColorAccentAtom);
+export const ThemeColor = () => {
+    const setColor = useSetAtom(themeColorAtom);
     const [open, setOpen] = useState(false);
     const afterClickAction = (selectedColor: string) => {
         setOpen(prev => !prev);
-        setColorAccent(selectedColor);
-        SetLS('accent', selectedColor);
+        setColor(selectedColor);
+        SetLS('color', selectedColor);
     };
     return (
         <>

@@ -2,7 +2,7 @@ import { CmnHeaderInner } from "../../templates/CmnHeaderInner";
 import { BtnList } from "../../molecules/BtnList";
 import { HomeLink } from "../../molecules/HomeLink";
 import { ModeColor } from "../../molecules/ModeColor";
-import { ThemeColorAccent } from "../../molecules/ThemeColorAccent";
+import { ThemeColor } from "../../molecules/ThemeColor";
 
 export const CmnHeader = () =>{
   return (
@@ -10,7 +10,7 @@ export const CmnHeader = () =>{
       <BtnList type="row">
         <HomeLink />
         <ModeColor />
-        <ThemeColorAccent />
+        <ThemeColor />
       </BtnList>
     </CmnHeaderInner>
   );
