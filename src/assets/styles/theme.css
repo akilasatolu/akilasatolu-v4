@@ -12,8 +12,8 @@
     --color-secondary-dark: #6a7282;
     --bg-color-dark: #1e1f24;
 
-    /* accent color */
-    --color-accent-blue: #3b5bdb;
-    --color-accent-green: #5DAC81;
-    --color-accent-pink: #E16B8C;
+    /* theme color */
+    --color-theme-blue: #3b5bdb;
+    --color-theme-green: #5DAC81;
+    --color-theme-pink: #E16B8C;
 }

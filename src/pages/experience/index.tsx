@@ -22,7 +22,7 @@ export const Experience = () => {
                 </p>
                 <div className="flex flex-wrap gap-2 mt-4">
                   {pj.pjTechList.map((t, idx) => (
-                    <span key={idx} className="rounded-lg text-[var(--color-accent)] [box-shadow:3px_3px_6px_#a3b1c6,-3px_-3px_6px_#ffffff] text-xs px-2 py-1">
+                    <span key={idx} className="rounded-lg text-[var(--color-theme)] [box-shadow:3px_3px_6px_#a3b1c6,-3px_-3px_6px_#ffffff] text-xs px-2 py-1">
                       {t}
                     </span>
                   ))}

@@ -29,15 +29,36 @@
 }
 
 :root[data-color='blue'] {
-  --color-accent: var(--color-accent-blue);
+  --color-theme: var(--color-theme-blue);
 }
 
 :root[data-color='green'] {
-  --color-accent: var(--color-accent-green);
+  --color-theme: var(--color-theme-green);
 }
 
 :root[data-color='pink'] {
-  --color-accent: var(--color-accent-pink);
+  --color-theme: var(--color-theme-pink);
+}
+
+:root[data-color='blue'] button:focus-visible,
+:root[data-color='blue'] a:focus-visible {
+  outline: none;
+  box-shadow: 0 0 0 2px var(--color-theme);
+  border-radius: inherit;
+}
+
+:root[data-color='green'] button:focus-visible,
+:root[data-color='green'] a:focus-visible {
+  outline: none;
+  box-shadow: 0 0 0 2px var(--color-theme);
+  border-radius: inherit;
+}
+
+:root[data-color='pink'] button:focus-visible,
+:root[data-color='pink'] a:focus-visible {
+  outline: none;
+  box-shadow: 0 0 0 2px var(--color-theme);
+  border-radius: inherit;
 }
 
 body {
@@ -51,7 +72,7 @@ a, button {
   cursor: pointer;
   border: none;
   transition: all 0.2s ease;
-  color: var(--color-accent);
+  color: var(--color-theme);
 }
 
 @media (hover: hover) {

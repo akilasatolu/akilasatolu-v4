@@ -19,7 +19,7 @@ export const Accordion = (props: AccordionProps) => {
         <span className="text-xl font-bold min-w-0 break-words">{props.title}</span>
         <span
           className={`block w-3 h-3 border-r-2 border-b-2 
-          [border-color:var(--color-accent)]
+          [border-color:var(--color-theme)]
           transform transition-transform duration-300 shrink-0 ml-2
           ${isOpen ? "-rotate-135 translate-y-1" : "rotate-45 -translate-y-1"}`}
         />
