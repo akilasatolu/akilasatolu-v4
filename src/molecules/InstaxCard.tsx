@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import type { PhotoData } from '../assets/types';
 
 type InstaxCardProps = {
@@ -9,11 +9,23 @@ type InstaxCardProps = {
 export const InstaxCard = (props: InstaxCardProps) => {
   const { data, rotation } = props;
   const [isHovered, setIsHovered] = useState(false);
+  const [scale, setScale] = useState(window.innerWidth < 375 ? 1.05 : 1.1);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setScale(window.innerWidth < 375 ? 1.05 : 1.1);
+    };
+
+    window.addEventListener("resize", handleResize);
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
 
   return (
     <div 
         className={`bg-white p-2 pb-4 shadow-md rounded-sm w-full h-full flex flex-col transition-transform hover:scale-110 max-[375px]:hover:scale-105`}
-        style={{ transform: `rotate(${isHovered ? 0 : rotation}deg)` }}
+        style={{ transform: `rotate(${isHovered ? 0 : rotation}deg) scale(${isHovered ? scale : 1})` }}
         onMouseEnter={() => setIsHovered(true)}
         onMouseLeave={() => setIsHovered(false)}
     >

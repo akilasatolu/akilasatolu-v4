@@ -7,7 +7,6 @@ react-router-dom
 
 
 
-・スマホの時のクリックアクション調整
 ・microCMS使用
 ・s3でテキストjson管理
 ・ドメイン購入
