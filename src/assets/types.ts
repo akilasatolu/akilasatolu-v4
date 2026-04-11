@@ -45,9 +45,9 @@ export type PhotoData = {
 };
 
 export type GoalsData = {
-  year: string;
+  title: string[];
   goals: {
     progress: number;
     goal: string;
   }[];
-}[];
+};

@@ -4,18 +4,26 @@ import { useAtomValue } from 'jotai';
 import type { GoalsData } from '../../assets/types';
 import { Accordion } from "../../molecules/Accordion";
 
+const getGoalsArr = (data?: GoalsData) => {
+  const goals = data?.goals ?? [];
+  const goalInProgress = goals.filter(g => g.progress < 100);
+  const goalCompleted = goals.filter(g => g.progress >= 100);
+  return [goalInProgress, goalCompleted];
+};
+
 export const Goals = () => {
   const data: GoalsData | undefined = useAtomValue(allDataAtom)?.goals;
+  const goalsArr = getGoalsArr(data);
   const modeColor = useAtomValue(modeColorAtom);
 
   return (
     <>
       {data &&
         <CmnInner>
-          {data.map(({ year, goals }, i) => (
-            <Accordion key={i} title={year} isOpen={i === 0} styles={`${i === 0 ? "" : "mt-6"}`}>
+          {data.title.map((t, i) => (
+            <Accordion key={i} title={t} isOpen={i === 0} styles={`${i === 0 ? "" : "mt-6"}`}>
               <ul>
-                {goals.map(({ progress, goal }, n) => (
+                {goalsArr[i].map(({ progress, goal }, n) => (
                   <li
                     key={`${i}-${n}`}
                     className={`flex items-center gap-3 max-[480px]:flex-col max-[480px]:items-start max-[480px]:gap-2 px-3 py-3 relative 
@@ -33,7 +41,7 @@ export const Goals = () => {
                                       }`}>
                         <div className="h-full rounded-[10px] transition-[width,background] duration-[600ms] ease-in-out" style={{width: `${progress}%`,background: `linear-gradient(90deg, color-mix(in srgb, var(--color-theme), white 40%), var(--color-theme))`}}/>
                       </div>
-                      <span className="w-7.5 text-xs">{progress}%</span>
+                      <span className="w-7.5 text-xs">{progress > 100 ? "100%" : `${progress}%`}</span>
                     </div>
                     <span>{goal}</span>
                   </li>
