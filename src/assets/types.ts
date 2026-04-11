@@ -1,7 +1,7 @@
 export type AllLangAllData = {
   en?: AllData;
-//   ja?: AllData;
-//   kr?: AllData;
+  ja?: AllData;
+  kr?: AllData;
 };
 
 export type AllData = {
