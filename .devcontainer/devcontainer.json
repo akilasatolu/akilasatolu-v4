@@ -1,0 +1,25 @@
+// コンテナ環境設定ファイル
+
+{
+  "name": "akilasatolu Dev Container",
+  "dockerComposeFile": "../docker-compose.yml",
+  "service": "frontend",
+  "workspaceFolder": "/app",
+  "settings": {
+    "terminal.integrated.defaultProfile.linux": "bash",
+    "files.watcherExclude": {
+      "**/node_modules/**": true,
+      "**/.git/**": true
+    },
+    "editor.formatOnSave": true,
+    "eslint.validate": ["javascript", "typescript", "javascriptreact", "typescriptreact"]
+  },
+  "extensions": [
+    "esbenp.prettier-vscode",
+    "dbaeumer.vscode-eslint",
+    "xabikos.JavaScriptSnippets",
+    "ecmel.vscode-html-css",
+    "ms-vscode.vscode-typescript-next"
+  ],
+  "remoteUser": "node"
+}
