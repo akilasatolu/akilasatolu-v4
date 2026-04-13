@@ -7,11 +7,12 @@ import { Btn } from "../atoms/Btn";
 import { SetLS } from "../utils/UseLocalStorage";
 import { Modal } from '../organisms/Modal';
 import { BtnList } from './BtnList';
+import type { Lang } from '../assets/types';
 
 export const LanguageSetting = () => {
     const setLang = useSetAtom(languageAtom);
     const [open, setOpen] = useState(false);
-    const afterClickAction = (selectedLang: string) => {
+    const afterClickAction = (selectedLang: Lang) => {
         setOpen(prev => !prev);
         setLang(selectedLang);
         SetLS('lang', selectedLang);
