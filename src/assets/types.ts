@@ -1,7 +1,10 @@
+export type Lang = "en" | "ja" | "kr";
+
 export type AllLangAllData = {
   en?: AllData;
   ja?: AllData;
   kr?: AllData;
+  cms?: PhotosData;
 };
 
 export type AllData = {
@@ -40,7 +43,9 @@ export type ExperienceData = {
 
 export type PhotosData = PhotoData[];
 export type PhotoData = {
-  photo: string;
+  photo: {
+    url: string;
+  };
   text: string;
 };
 
