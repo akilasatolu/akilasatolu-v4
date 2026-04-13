@@ -41,7 +41,7 @@ jobs:
       # 5. S3へのアップロード
       - name: Sync to S3
         run: |
-          aws s3 sync ./dist s3://${{ secrets.S3_BUCKET }} --delete --exclude "akilasatolu.json" --exclude "photo/*"
+          aws s3 sync ./dist s3://${{ secrets.S3_BUCKET }} --delete --exclude "akilasatolu.json" --exclude "photos/*"
 
       # 6. CloudFrontのキャッシュ無効化
       - name: Invalidate CloudFront cache
