@@ -1,5 +1,5 @@
 import { useSetAtom, useAtomValue } from 'jotai';
-import { allDataAtom, languageAtom } from '../assets/jotai';
+import { allDataAtom, languageAtom, isLoadingAtom } from '../assets/jotai';
 import { useEffect, useRef } from 'react';
 import type { AllLangAllData, PhotosData, Lang } from '../assets/types';
 
@@ -7,9 +7,11 @@ const API_BASE = import.meta.env.VITE_API_BASE || "";
 
 export const SetAllData = () => {
   const setAllData = useSetAtom(allDataAtom);
+  const setIsLoading = useSetAtom(isLoadingAtom);
   const lang: Lang = useAtomValue(languageAtom);
   const dataRef = useRef<AllLangAllData>({});
   const fetchData = async () => {
+    setIsLoading(true);
     try {
       const [localRes, cmsRes] = await Promise.all([
         fetch('/akilasatolu.json'),
@@ -31,6 +33,7 @@ export const SetAllData = () => {
       const langData = dataRef.current ? (dataRef.current[lang] ?? dataRef.current.en) : undefined;
       const base = langData ?? {};
       setAllData({ ...base, photos: cmsPhotos });
+      setIsLoading(false);
     };
 
     if (dataRef.current && Object.keys(dataRef.current).length === 0) {
