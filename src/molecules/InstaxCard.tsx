@@ -30,7 +30,7 @@ export const InstaxCard = (props: InstaxCardProps) => {
         onMouseLeave={() => setIsHovered(false)}
     >
         <div className="w-full flex-1 flex">
-            <img className="w-full h-full object-contain" src={`${data.photo.url}`} alt={`${data.text}`} loading="lazy" />
+            <img className="w-full h-full object-contain min-h-[100px]" src={`${data.photo.url}`} alt={`${data.text}`} loading="lazy" />
         </div>
         <p className="text-center text-[var(--color-primary-light)] text-xs mt-4 font-['Comic_Sans_MS',Verdana,Arial,sans-serif]">
             {data.text}
