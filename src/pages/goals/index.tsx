@@ -1,7 +1,7 @@
 import { CmnInner } from "../../templates/CmnInner";
 import { allDataAtom, modeColorAtom } from '../../assets/jotai';
 import { useAtomValue } from 'jotai';
-import type { GoalsData } from '../../assets/types';
+import type { GoalsData, Mode } from '../../assets/types';
 import { Accordion } from "../../molecules/Accordion";
 
 const getGoalsArr = (data?: GoalsData) => {
@@ -14,7 +14,7 @@ const getGoalsArr = (data?: GoalsData) => {
 export const Goals = () => {
   const data: GoalsData | undefined = useAtomValue(allDataAtom)?.goals;
   const goalsArr = getGoalsArr(data);
-  const modeColor = useAtomValue(modeColorAtom);
+  const modeColor: Mode = useAtomValue(modeColorAtom);
 
   return (
     <CmnInner>

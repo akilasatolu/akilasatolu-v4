@@ -1,11 +1,11 @@
 import { CmnInner } from "../../templates/CmnInner";
 import { useAtomValue } from 'jotai';
 import { allDataAtom, modeColorAtom } from '../../assets/jotai';
-import type { ExperienceData } from '../../assets/types';
+import type { ExperienceData, Mode } from '../../assets/types';
 
 export const Experience = () => {
   const data: ExperienceData | undefined = useAtomValue(allDataAtom)?.experience;
-  const modeColor = useAtomValue(modeColorAtom);
+  const modeColor: Mode = useAtomValue(modeColorAtom);
 
   return (
     <CmnInner>

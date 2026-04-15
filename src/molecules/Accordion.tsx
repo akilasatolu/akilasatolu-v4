@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { modeColorAtom } from '../assets/jotai';
 import { useAtomValue } from 'jotai';
+import type { Mode } from '../assets/types';
 
 type AccordionProps = {
   title: string;
@@ -11,7 +12,7 @@ type AccordionProps = {
 
 export const Accordion = (props: AccordionProps) => {
   const [isOpen, setIsOpen] = useState(props.isOpen || false);
-  const modeColor = useAtomValue(modeColorAtom);
+  const modeColor: Mode = useAtomValue(modeColorAtom);
 
   return (
     <div className={`${props?.styles}`}>

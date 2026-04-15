@@ -1,5 +1,7 @@
 export type Lang = "en" | "ja" | "kr";
 
+export type Mode = "light" | "dark";
+
 export type AllLangAllData = {
   en?: AllData;
   ja?: AllData;
