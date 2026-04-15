@@ -4,10 +4,11 @@ import type { PhotoData } from '../assets/types';
 type InstaxCardProps = {
   data: PhotoData;
   rotation: number;
+  onClick: (url: string | null) => void;
 };
 
 export const InstaxCard = (props: InstaxCardProps) => {
-  const { data, rotation } = props;
+  const { data, rotation, onClick } = props;
   const [isHovered, setIsHovered] = useState(false);
   const [scale, setScale] = useState(window.innerWidth < 375 ? 1.05 : 1.1);
 
@@ -28,6 +29,7 @@ export const InstaxCard = (props: InstaxCardProps) => {
         style={{ transform: `rotate(${isHovered ? 0 : rotation}deg) scale(${isHovered ? scale : 1})` }}
         onMouseEnter={() => setIsHovered(true)}
         onMouseLeave={() => setIsHovered(false)}
+        onClick={() => onClick(data.photo.url)}
     >
         <div className="w-full flex-1 flex">
             <img className="w-full h-full object-contain min-h-[100px]" src={`${data.photo.url}`} alt={`${data.text}`} loading="lazy" />

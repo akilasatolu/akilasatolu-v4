@@ -31,7 +31,9 @@ export const Modal = (props: ModalProps) => {
         <Btn type="button" onClick={props.onClose} shape="circle">
           <FontAwesomeIcon icon={faXmark} />
         </Btn>
-        <div className="font-bold text-xl leading-relaxed text-center">{props.title}</div>
+        {props.title &&
+          <div className="font-bold text-xl leading-relaxed text-center">{props.title}</div>
+        }
         {props.children}
       </div>
     </div>
