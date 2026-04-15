@@ -17,10 +17,10 @@ export const Home = () => {
   const textCss = "text-lg leading-relaxed";
   const textLinkCss = "inline-block text-[1.4em] font-semibold tracking-[0.03em] ml-1 mr-1";
   return (
-    <>
+    <CmnInner>
       {
         data && 
-          <CmnInner>
+          <>
             <Avatar />
             <div className={textBlockCss}>
               <p className={textCss}>{data["1-1"]}<Link to={pageInfo[data["1-2-1"]]?.path ?? pageInfo.home.path} className={textLinkCss} onClick={ScrollToTop}>{data["1-2"]}</Link>{data["1-3"]}</p>
@@ -47,8 +47,8 @@ export const Home = () => {
                 </BtnList>
               </div>
             </div>
-          </CmnInner>
+          </>
       }
-    </>
+    </CmnInner>
   );
 }

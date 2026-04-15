@@ -8,12 +8,10 @@ export const Photos = () => {
   const data: PhotosData | undefined = useAtomValue(allDataAtom)?.photos;
 
   return (
-    <>
+    <CmnInner>
       {data && 
-        <CmnInner>
-          <Gallery data={data} />
-        </CmnInner>
+        <Gallery data={data} />
       }
-    </>
+    </CmnInner>
   )
 }

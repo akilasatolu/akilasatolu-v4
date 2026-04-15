@@ -8,9 +8,9 @@ export const Experience = () => {
   const modeColor = useAtomValue(modeColorAtom);
 
   return (
-    <>
+    <CmnInner>
       {data && 
-        <CmnInner>
+        <>
           {data.map((pj, index) => (
             <div key={index}>
               <div className="inu p-6 rounded-2xl">
@@ -42,8 +42,8 @@ export const Experience = () => {
               )}
             </div>
           ))}
-        </CmnInner>
+        </>
       }
-    </>
+    </CmnInner>
   )
 }

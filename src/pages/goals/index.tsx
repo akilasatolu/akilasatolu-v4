@@ -17,9 +17,9 @@ export const Goals = () => {
   const modeColor = useAtomValue(modeColorAtom);
 
   return (
-    <>
+    <CmnInner>
       {data &&
-        <CmnInner>
+        <>
           {data.title.map((t, i) => (
             <Accordion key={i} title={t} isOpen={i === 0} styles={`${i === 0 ? "" : "mt-6"}`}>
               <ul>
@@ -49,8 +49,8 @@ export const Goals = () => {
               </ul>
             </Accordion>
           ))}
-        </CmnInner>
+        </>
       }
-    </>
+    </CmnInner>
   )
 }
