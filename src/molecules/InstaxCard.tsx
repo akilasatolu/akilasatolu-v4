@@ -24,11 +24,13 @@ export const InstaxCard = (props: InstaxCardProps) => {
   }, []);
 
   return (
-    <div 
+    <button 
         className={`bg-white p-2 pb-4 shadow-md rounded-sm w-full h-full flex flex-col transition-transform`}
         style={{ transform: `rotate(${isHovered ? 0 : rotation}deg) scale(${isHovered ? scale : 1})` }}
         onMouseEnter={() => setIsHovered(true)}
         onMouseLeave={() => setIsHovered(false)}
+        onFocus={() => setIsHovered(true)}
+        onBlur={() => setIsHovered(false)}
         onClick={() => onClick(data.photo.url)}
     >
         <div className="w-full flex-1 flex">
@@ -37,6 +39,6 @@ export const InstaxCard = (props: InstaxCardProps) => {
         <p className="text-center text-[var(--color-primary-light)] text-xs mt-4 font-['Comic_Sans_MS',Verdana,Arial,sans-serif]">
             {data.text}
         </p>
-    </div>
+    </button>
   );
 };
