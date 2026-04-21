@@ -5,7 +5,7 @@ import { Btn } from "../atoms/Btn";
 export const HomeLink = () => {
     return (
         <>
-            <Btn type="a" internal={true} href="home" shape="circle">
+            <Btn type="a" internal={true} href="home" shape="circle" label="Home">
                 <FontAwesomeIcon icon={faHouse} />
             </Btn>
         </>

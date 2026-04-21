@@ -2,6 +2,7 @@ import { useState } from "react";
 import { modeColorAtom } from '../assets/jotai';
 import { useAtomValue } from 'jotai';
 import type { Mode } from '../assets/types';
+import { getRandomNum } from "../utils/getRandomNum";
 
 type AccordionProps = {
   title: string;
@@ -13,12 +14,16 @@ type AccordionProps = {
 export const Accordion = (props: AccordionProps) => {
   const [isOpen, setIsOpen] = useState(props.isOpen || false);
   const modeColor: Mode = useAtomValue(modeColorAtom);
+  const randomNum = getRandomNum();
 
   return (
     <div className={`${props?.styles}`}>
       <button
         className="w-full p-4 flex justify-between items-center rounded-2xl neu"
         onClick={() => setIsOpen(!isOpen)}
+        aria-expanded={isOpen}
+        aria-controls={`panel-${randomNum}`}
+        id={`accordion-${randomNum}`}
       >
         <span className="text-xl font-bold min-w-0 break-words">{props.title}</span>
         <span
@@ -34,6 +39,9 @@ export const Accordion = (props: AccordionProps) => {
           grid transition-all duration-300
           ${isOpen ? "grid-rows-[1fr] opacity-100" : "grid-rows-[0fr] opacity-0"}
         `}
+        role="region"
+        id={`panel-${randomNum}`}
+        aria-labelledby={`accordion-${randomNum}`}
       >
         <div className="overflow-hidden">
           <div

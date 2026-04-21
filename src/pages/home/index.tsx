@@ -23,25 +23,25 @@ export const Home = () => {
           <>
             <Avatar />
             <div className={textBlockCss}>
-              <p className={textCss}>{data["1-1"]}<Link to={pageInfo[data["1-2-1"]]?.path ?? pageInfo.home.path} className={textLinkCss} onClick={ScrollToTop}>{data["1-2"]}</Link>{data["1-3"]}</p>
+              <p className={textCss}>{data["1-1"]}<Link aria-label="Home" to={pageInfo[data["1-2-1"]]?.path ?? pageInfo.home.path} className={textLinkCss} onClick={ScrollToTop}>{data["1-2"]}</Link>{data["1-3"]}</p>
             </div>
             <div className={textBlockCss}>
-              <p className={textCss}>{data["2-1"]}<Link to={pageInfo[data["2-2-1"]]?.path ?? pageInfo.home.path} className={textLinkCss} onClick={ScrollToTop}>{data["2-2"]}</Link>{data["2-3"]}</p>
+              <p className={textCss}>{data["2-1"]}<Link aria-label="Experience" to={pageInfo[data["2-2-1"]]?.path ?? pageInfo.home.path} className={textLinkCss} onClick={ScrollToTop}>{data["2-2"]}</Link>{data["2-3"]}</p>
             </div>
             <div className={textBlockCss}>
               <p className={textCss}>{data["3-1"]}</p>
             </div>
             <div className={textBlockCss}>
-              <p className={textCss}>{data["4-1"]}<Link to={pageInfo[data["4-2-1"]]?.path ?? pageInfo.home.path} className={textLinkCss} onClick={ScrollToTop}>{data["4-2"]}</Link>{data["4-3"]}<Link to={pageInfo[data["4-4-1"]]?.path ?? pageInfo.home.path} className={textLinkCss} onClick={ScrollToTop}>{data["4-4"]}</Link>{data["4-5"]}</p>
+              <p className={textCss}>{data["4-1"]}<Link aria-label="Goals" to={pageInfo[data["4-2-1"]]?.path ?? pageInfo.home.path} className={textLinkCss} onClick={ScrollToTop}>{data["4-2"]}</Link>{data["4-3"]}<Link aria-label="Photos" to={pageInfo[data["4-4-1"]]?.path ?? pageInfo.home.path} className={textLinkCss} onClick={ScrollToTop}>{data["4-4"]}</Link>{data["4-5"]}</p>
             </div>
             <div className={textBlockCss}>
               <div className={`${textCss} flex flex-row flex-wrap gap-x-4 gap-y-3 items-center text-[var(--color-secondary)]`}>
                 <p>{data["5-1"]}</p>
                 <BtnList type="row">
-                  <Btn type="a" href="https://github.com/akilasatolu" shape="circle">
+                  <Btn type="a" href="https://github.com/akilasatolu" shape="circle" label="GitHub">
                     <FontAwesomeIcon icon={faGithub} style={{ fontSize: 24 }} />
                   </Btn>
-                  <Btn type="a" href="https://www.linkedin.com/in/shogo-yoshizawa-70794a374" shape="circle">
+                  <Btn type="a" href="https://www.linkedin.com/in/shogo-yoshizawa-70794a374" shape="circle" label="LinkedIn">
                     <FontAwesomeIcon icon={faSquareLinkedin} style={{ fontSize: 24 }} />
                   </Btn>
                 </BtnList>

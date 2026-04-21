@@ -9,6 +9,7 @@ type ButtonProps = {
   shape: "circle" | "square";
   onClick?: () => void;
   styles?: string;
+  label: string;
 };
 
 type AnchorProps = {
@@ -18,6 +19,7 @@ type AnchorProps = {
   shape: "circle" | "square";
   internal?: boolean;
   styles?: string;
+  label: string;
 };
 
 type BtnProps = ButtonProps | AnchorProps;
@@ -30,7 +32,7 @@ export const Btn = (props: BtnProps) => {
   if (props.type === "a") {
     if (props.internal) {
         return (
-            <Link to={(pageInfo[props.href]?.path ?? pageInfo.home.path)} className={`${btnCss} neu ${props.styles}`} onClick={ScrollToTop}>
+            <Link to={(pageInfo[props.href]?.path ?? pageInfo.home.path)} className={`${btnCss} neu ${props.styles}`} onClick={ScrollToTop} aria-label={props.label}>
                 {props.children}
             </Link>
         );
@@ -42,7 +44,7 @@ export const Btn = (props: BtnProps) => {
     );
   } else if (props.type === "button") {
     return (
-      <button className={`${btnCss} neu ${props.styles}`} onClick={props.onClick}>
+      <button className={`${btnCss} neu ${props.styles}`} onClick={props.onClick} aria-label={props.label}>
         {props.children}
       </button>
     );

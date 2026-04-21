@@ -64,12 +64,14 @@ export const Modal = (props: ModalProps) => {
         onClick={(e) => e.stopPropagation()}
         tabIndex={-1}
         ref={modalRef}
+        aria-modal="true"
+        aria-labelledby="modal-title"
       >
-        <Btn type="button" onClick={props.onClose} shape="circle">
+        <Btn type="button" onClick={props.onClose} shape="circle" label="Close Modal">
           <FontAwesomeIcon icon={faXmark} />
         </Btn>
         {props.title &&
-          <div className="font-bold text-xl leading-relaxed text-center">{props.title}</div>
+          <div id="modal-title" className="font-bold text-xl leading-relaxed text-center">{props.title}</div>
         }
         {props.children}
       </div>

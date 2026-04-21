@@ -19,19 +19,19 @@ export const LanguageSetting = () => {
     };
     return (
         <>
-            <Btn type="button" onClick={() => { setOpen(!open) }} shape="circle">
+            <Btn type="button" onClick={() => { setOpen(!open) }} shape="circle" label='select language'>
                 <FontAwesomeIcon icon={faLanguage} />
             </Btn>
             {open && 
                 <Modal onClose={() => setOpen(false)} title='Select Language'>
                     <BtnList type="row" style='justify-center'>
-                        <Btn type="button" onClick={() => afterClickAction('en')} shape='square'>
+                        <Btn type="button" onClick={() => afterClickAction('en')} shape='square' label='English'>
                             <span>English</span>
                         </Btn>
-                        <Btn type="button" onClick={() => afterClickAction('ja')} shape='square'>
+                        <Btn type="button" onClick={() => afterClickAction('ja')} shape='square' label='日本語'>
                             <span>日本語</span>
                         </Btn>
-                        <Btn type="button" onClick={() => afterClickAction('kr')} shape='square'>
+                        <Btn type="button" onClick={() => afterClickAction('kr')} shape='square' label='한국어'>
                             <span>한국어</span>
                         </Btn>
                     </BtnList>

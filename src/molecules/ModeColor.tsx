@@ -14,7 +14,7 @@ export const ModeColor = () => {
     };
     return (
         <>
-            <Btn type="button" onClick={() => { afterClickAction(mode === 'dark' ? 'light' : 'dark') }} shape="circle">
+            <Btn type="button" onClick={() => { afterClickAction(mode === 'dark' ? 'light' : 'dark') }} shape="circle" label={mode === 'dark' ? 'Switch to Light Mode' : 'Switch to Dark Mode'}>
                 {mode === 'dark' && <FontAwesomeIcon icon={faSun} />}
                 {mode === 'light' && <FontAwesomeIcon icon={faMoon} />}
             </Btn>

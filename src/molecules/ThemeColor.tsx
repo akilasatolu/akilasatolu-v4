@@ -18,19 +18,19 @@ export const ThemeColor = () => {
     };
     return (
         <>
-            <Btn type="button" onClick={() => { setOpen(!open) }} shape="circle">
+            <Btn type="button" onClick={() => { setOpen(!open) }} shape="circle" label='select theme color'>
                 <FontAwesomeIcon icon={faPalette} />
             </Btn>
             {open && 
                 <Modal onClose={() => setOpen(false)} title='Select Theme Color'>
                     <BtnList type="row" style='justify-center'>
-                        <Btn type="button" onClick={() => afterClickAction('blue')} shape='circle'>
+                        <Btn type="button" onClick={() => afterClickAction('blue')} shape='circle' label='Blue'>
                             <span className='bg-[var(--color-theme-blue)] w-10 h-10 rounded-full'></span>
                         </Btn>
-                        <Btn type="button" onClick={() => afterClickAction('green')} shape='circle'>
+                        <Btn type="button" onClick={() => afterClickAction('green')} shape='circle' label='Green'>
                             <span className='bg-[var(--color-theme-green)] w-10 h-10 rounded-full'></span>
                         </Btn>
-                        <Btn type="button" onClick={() => afterClickAction('pink')} shape='circle'>
+                        <Btn type="button" onClick={() => afterClickAction('pink')} shape='circle' label='Pink'>
                             <span className='bg-[var(--color-theme-pink)] w-10 h-10 rounded-full'></span>
                         </Btn>
                     </BtnList>
